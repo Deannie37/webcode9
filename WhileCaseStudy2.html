@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentinel</title>
+</head>
+<body>
+    <script>
+        var total = 0;
+        var angka = 0;
+
+        while (angka != -1) {
+            angka = parseInt(prompt("Masukkan angka (ketik -1 untuk berhenti):"));
+            
+            if (angka != -1) {
+                total = total + angka;
+            }
+        }
+
+        console.log("Total jumlah angka adalah: " + total);
+    </script>
+</body>
+</html>

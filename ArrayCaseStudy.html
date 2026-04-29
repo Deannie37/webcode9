@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array</title>
+</head>
+<body>
+<script>
+    var fruits = [];
+    var input = "";
+
+    while (input !== "stop") {
+        input = prompt("Masukkan nama buah (ketik 'stop' untuk berhenti):");
+        if (input !== "stop") {
+            fruits.push(input);
+        }
+    }
+
+    for (var i = 0; i < fruits.length; i++) {
+        console.log(fruits[i]);
+    }
+</script>
+</body>
+</html>
