@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daftar Tugas JavaScript & HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: white;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        a {
+            text-decoration: none;
+            color: #0077cc;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #ff6600;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Daftar File Tugas HTML & JavaScript</h1>
+
+    <ul>
+        <li><a href="AlertInHTML.html">AlertInHTML.html</a></li>
+        <li><a href="AlertInJS.js">AlertInJS.js</a></li>
+        <li><a href="ArrayCaseStudy.html">ArrayCaseStudy.html</a></li>
+        <li><a href="ArrayForEach.html">ArrayForEach.html</a></li>
+        <li><a href="ArrayForEachCaseStudy.html">ArrayForEachCaseStudy.html</a></li>
+        <li><a href="ArrayJoin.html">ArrayJoin.html</a></li>
+        <li><a href="ArrayMap.html">ArrayMap.html</a></li>
+        <li><a href="ArrayMapCaseStudy.html">ArrayMapCaseStudy.html</a></li>
+        <li><a href="ConditionalCaseStudy.html">ConditionalCaseStudy.html</a></li>
+        <li><a href="ForLoop.html">ForLoop.html</a></li>
+        <li><a href="ForLoopCaseStudy1.html">ForLoopCaseStudy1.html</a></li>
+        <li><a href="ForLoopCaseStudy2.html">ForLoopCaseStudy2.html</a></li>
+        <li><a href="Function.html">Function.html</a></li>
+        <li><a href="FunctionCaseStudy1.html">FunctionCaseStudy1.html</a></li>
+        <li><a href="FunctionCaseStudy2.html">FunctionCaseStudy2.html</a></li>
+        <li><a href="FunctionExpression.html">FunctionExpression.html</a></li>
+        <li><a href="FunctionParam.html">FunctionParam.html</a></li>
+        <li><a href="If.html">If.html</a></li>
+        <li><a href="JSDomBasic.html">JSDomBasic.html</a></li>
+        <li><a href="JSDomCaseStudy.html">JSDomCaseStudy.html</a></li>
+        <li><a href="JSObjectCaseStudy.html">JSObjectCaseStudy.html</a></li>
+        <li><a href="JSObject.html">JSObject.html</a></li>
+        <li><a href="Random.html">Random.html</a></li>
+        <li><a href="RandomCaseStudy1.html">RandomCaseStudy1.html</a></li>
+        <li><a href="RandomCaseStudy2.html">RandomCaseStudy2.html</a></li>
+        <li><a href="TernaryIf.html">TernaryIf.html</a></li>
+        <li><a href="WhileCaseStudy1.html">WhileCaseStudy1.html</a></li>
+        <li><a href="WhileCaseStudy2.html">WhileCaseStudy2.html</a></li>
+        <li><a href="WhileLoop.html">WhileLoop.html</a></li>
+        <li><a href="confirm.html">confirm.html</a></li>
+        <li><a href="prompt.html">prompt.html</a></li>
+    </ul>
+
+</body>
+</html>
