@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stopwatch</title>
+    <style>
+        body{
+            margin:0;height:100vh;display:flex;
+            justify-content:center;align-items:center;
+            flex-direction:column;font-family:Arial;
+        }
+        button{padding:10px 20px;margin:5px;}
+    </style>
+</head>
+<body>
+
+<h1 id="waktu">0</h1>
+<button onclick="start()">Start</button>
+<button onclick="stop()">Stop</button>
+<button onclick="reset()">Reset</button>
+
+<script>
+var hitung=0;
+var timer=null;
+
+function start(){
+    if(timer===null){
+        timer=setInterval(function(){
+            hitung++;
+            document.getElementById("waktu").innerHTML=hitung;
+        },1000);
+    }
+}
+function stop(){
+    clearInterval(timer);
+    timer=null;
+}
+function reset(){
+    hitung=0;
+    document.getElementById("waktu").innerHTML=hitung;
+    clearInterval(timer);
+    timer=null;
+}
+</script>
+
+</body>
+</html>

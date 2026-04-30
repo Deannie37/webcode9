@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Captcha</title>
+    <style>
+        body{
+            margin:0;height:100vh;display:flex;
+            justify-content:center;align-items:center;
+            flex-direction:column;font-family:Arial;text-align:center;
+        }
+        button{padding:10px 20px;margin-top:10px;}
+    </style>
+</head>
+<body>
+
+<div id="captchaArea"></div>
+<input type="number" id="jawaban" placeholder="Jawaban"><br>
+<button onclick="cekCaptcha()">Login</button>
+<p id="hasil"></p>
+
+<script>
+var angkaImages=[
+"https://dummyimage.com/50x50/000/fff&text=0",
+"https://dummyimage.com/50x50/000/fff&text=1",
+"https://dummyimage.com/50x50/000/fff&text=2",
+"https://dummyimage.com/50x50/000/fff&text=3",
+"https://dummyimage.com/50x50/000/fff&text=4",
+"https://dummyimage.com/50x50/000/fff&text=5",
+"https://dummyimage.com/50x50/000/fff&text=6",
+"https://dummyimage.com/50x50/000/fff&text=7",
+"https://dummyimage.com/50x50/000/fff&text=8",
+"https://dummyimage.com/50x50/000/fff&text=9"
+];
+
+var a,b,op,hasil;
+
+function buat(){
+    a=Math.floor(Math.random()*10);
+    b=Math.floor(Math.random()*10);
+    op=Math.random()>0.5?"+":"-";
+    hasil=op=="+"?a+b:a-b;
+
+    document.getElementById("captchaArea").innerHTML=
+    "<img src='"+angkaImages[a]+"'> "+op+
+    " <img src='"+angkaImages[b]+"'>";
+}
+
+function cekCaptcha(){
+    var j=document.getElementById("jawaban").value;
+    if(j==hasil){
+        document.getElementById("hasil").innerHTML="CAPTCHA is VALID!";
+    }else{
+        document.getElementById("hasil").innerHTML="CAPTCHA is INVALID!";
+    }
+    buat();
+}
+
+buat();
+</script>
+
+</body>
+</html>

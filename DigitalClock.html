@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Clock</title>
+    <style>
+        body{
+            margin:0;height:100vh;display:flex;
+            justify-content:center;align-items:center;
+            flex-direction:column;font-family:Arial;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="jam"></h1>
+
+<script>
+function tampilJam(){
+    var w = new Date();
+    document.getElementById("jam").innerHTML =
+        w.getHours()+":"+w.getMinutes()+":"+w.getSeconds();
+}
+setInterval(tampilJam,1000);
+</script>
+
+</body>
+</html>

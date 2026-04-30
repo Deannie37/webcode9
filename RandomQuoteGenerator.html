@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Quote</title>
+    <style>
+        body{
+            margin:0;height:100vh;display:flex;
+            justify-content:center;align-items:center;
+            flex-direction:column;font-family:Arial;text-align:center;
+        }
+        button{padding:10px 20px;}
+    </style>
+</head>
+<body>
+
+<h2>Random Quote</h2>
+<p id="quote">Klik tombol</p>
+<button onclick="tampilQuote()">Tampilkan Quote</button>
+
+<script>
+var quotes = ["Talk is cheap. Show me the code.","Fix the cause, not the symptom.","Make it work, make it right, make it fast.","Knowledge is power.","Experience is the name everyone gives to their mistakes.","Java is to JavaScript what car is to Carpet.","Before software reusable, it must be usable.","Any fool can write code.","First, solve the problem.","Be different."];
+
+function tampilQuote(){
+    var i = Math.floor(Math.random()*quotes.length);
+    document.getElementById("quote").innerHTML = quotes[i];
+}
+</script>
+
+</body>
+</html>

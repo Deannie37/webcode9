@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carousel</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            font-family:Arial;
+        }
+
+        img{
+            width:270px;
+            aspect-ratio: 9 / 16;   /* kunci rasio */
+            object-fit: cover;      /* agar tidak gepeng */
+            border:1px solid rgb(255, 255, 255);
+            border-radius:10px;
+        }
+
+        button{
+            padding:10px 20px;
+            margin:15px 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Image Carousel</h2>
+
+<img id="gambar" src="https://i.pinimg.com/1200x/f0/82/63/f0826383b5f36fae41f857c0f6b0ec54.jpg">
+
+<br>
+<button onclick="mundur()">Mundur</button>
+<button onclick="maju()">Maju</button>
+
+<script>
+var images = [
+    "https://i.pinimg.com/1200x/f0/82/63/f0826383b5f36fae41f857c0f6b0ec54.jpg",
+    "https://i.pinimg.com/736x/a3/23/bb/a323bb1e0aec61aa446c82616086e4f2.jpg",
+    "https://i.pinimg.com/736x/af/6b/9d/af6b9df9fdcb3d3ee18780b04e249ce0.jpg",
+    "https://i.pinimg.com/736x/79/ad/d1/79add1d28c641c956834d3eb88b5298a.jpg",
+    "https://i.pinimg.com/736x/78/84/89/78848965b879271e6274e1e9de4cdd14.jpg",
+    "https://i.pinimg.com/736x/b3/c6/4f/b3c64f41dc8a270fe4d232ee465cd58c.jpg"
+];
+
+var index = 0;
+
+function tampilGambar(){
+    document.getElementById("gambar").src = images[index];
+}
+
+function maju(){
+    index = (index + 1) % images.length;
+    tampilGambar();
+}
+
+function mundur(){
+    index = (index - 1 + images.length) % images.length;
+    tampilGambar();
+}
+</script>
+
+</body>
+</html>

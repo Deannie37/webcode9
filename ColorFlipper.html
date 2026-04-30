@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Flipper</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            font-family:Arial;
+        }
+        button{padding:10px 20px;font-size:16px;}
+    </style>
+</head>
+<body>
+
+<h2>Color Flipper</h2>
+<button onclick="gantiWarna()">Ganti Warna</button>
+
+<script>
+function gantiWarna() {
+    var hex = "0123456789ABCDEF";
+    var warna = "#";
+    for (var i = 0; i < 6; i++) {
+        warna += hex[Math.floor(Math.random() * 16)];
+    }
+    document.body.style.backgroundColor = warna;
+}
+</script>
+
+</body>
+</html>
